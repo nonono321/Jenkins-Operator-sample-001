@@ -9,13 +9,7 @@ podTemplate(label: label,
         containers: [
                 containerTemplate(
 			name: 'jnlp',
-			image: 'jenkins/jnlp-slave:alpine',
-			envVars: [
-				envVar(key: 'http_proxy', value: 'http://proxygate2.nic.nec.co.jp:8080'),
-				envVar(key: 'HTTP_PROXY', value: 'http://proxygate2.nic.nec.co.jp:8080'),
-				envVar(key: 'https_proxy', value: 'http://proxygate2.nic.nec.co.jp:8080'),
-				envVar(key: 'HTTPS_PROXY', value: 'http://proxygate2.nic.nec.co.jp:8080'),
-			]
+			image: 'jenkins/jnlp-slave:alpine'
 		),
                 containerTemplate(
 			name: 'go',
