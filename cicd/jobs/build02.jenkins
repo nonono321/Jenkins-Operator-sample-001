@@ -10,7 +10,7 @@ job("MyProject-Build") {
     scm {
         git {
             remote {
-                url gitUrl.
+                url('https://github.com/nonono321/Jenkins-Operator-sample-001')
                 branch "origin/master"
             }
             extensions {
