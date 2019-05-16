@@ -21,7 +21,7 @@ podTemplate(label: label,
 			name: 'go',
 			image: 'golang:1-alpine',
 			command: 'cat', 
-			ttyEnabled: true
+			ttyEnabled: true,
                         envVars: [
                                 envVar(key: 'http_proxy', value: 'proxygate2.nic.nec.co.jp'),
                                 envVar(key: 'HTTP_PROXY', value: 'proxygate2.nic.nec.co.jp'),
