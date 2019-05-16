@@ -39,7 +39,7 @@ podTemplate(label: label,
 
             stage('Build') {
                 container('go') {
-                    sh 'make build'
+                    sh 'echo build test'
                 }
             }
         }
